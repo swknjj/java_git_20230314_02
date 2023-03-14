@@ -5,9 +5,9 @@ public class StudentDTO {
 	private String studentName;
 	private String studentMajor;
 	private String studentMoblie;
-		
-	public StudentDTO () {
-		
+
+	public StudentDTO() {
+
 	}
 
 	public int getStudentNumber() {
@@ -41,10 +41,10 @@ public class StudentDTO {
 	public void setStudentMoblie(String studentMoblie) {
 		this.studentMoblie = studentMoblie;
 	}
-	
 
-	public String toString () {
-		return studentNumber +"\t"+ studentName +"\t"+ studentMajor +"\t"+ studentMoblie;
+	public String toString() {
+		String str = studentNumber + "\t" + studentName + "\t" + studentMajor + "\t" + studentMoblie;
+		return str;
 	}
 
 }
