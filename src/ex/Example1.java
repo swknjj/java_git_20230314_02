@@ -6,7 +6,6 @@ public class Example1 {
 		// TODO Auto-generated method stub
 		Example2 ex = new Example2();
 		
-		
 		System.out.println("구구단 출력");
 		ex.numbertable();
 		
