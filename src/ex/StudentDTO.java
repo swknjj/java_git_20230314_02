@@ -1,20 +1,21 @@
 package ex;
 
 public class StudentDTO {
-	private int studentNumber;
-	private String studentName;
-	private String studentMajor;
-	private String studentMoblie;
+	private Long id; // 관리번호
+	private String studentNumber; // 학번
+	private String studentName; // 이름
+	private String studentMajor;// 전공
+	private String studentMoblie;// 전화번호
 
 	public StudentDTO() {
 
 	}
 
-	public int getStudentNumber() {
+	public String getStudentNumber() {
 		return studentNumber;
 	}
 
-	public void setStudentNumber(int studentNumber) {
+	public void setStudentNumber(String studentNumber) {
 		this.studentNumber = studentNumber;
 	}
 
@@ -40,6 +41,14 @@ public class StudentDTO {
 
 	public void setStudentMoblie(String studentMoblie) {
 		this.studentMoblie = studentMoblie;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String toString() {
