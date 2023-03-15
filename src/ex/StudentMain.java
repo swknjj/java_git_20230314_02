@@ -17,6 +17,17 @@ public class StudentMain {
 		s1.setStudentMoblie("010-1111-1111");
 		studentMap.put(s1.getId(), s1);
 		
+		StudentDTO s5 = new StudentDTO();
+		s5.setId(1L);
+		s5.setStudentNumber("1111");
+		s5.setStudentName("김자바");
+		s5.setStudentMajor("컴퓨터공학");
+		s5.setStudentMoblie("010-1111-1111");
+		studentMap.put(s5.getId(), s5);
+		
+		System.out.println(s5.equals(s1)); //false
+		System.out.println(s5.getStudentName().equals(s1.getStudentName())); // true
+		
 		StudentDTO s2 = new StudentDTO();
 		s2.setId(2L);
 		s2.setStudentNumber("2222");
