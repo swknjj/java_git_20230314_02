@@ -37,7 +37,9 @@ public class StudentMain {
 		System.out.printf("번호(id)\t학번\t이름\t전공\t전화번호\n");
 		System.out.println("================================================");
 		for(Long key:studentMap.keySet()) {
-			System.out.println(key+"\t"+studentMap.get(key).toString());
+			System.out.println(key+"\t"+studentMap.get(key).toString()); // student 객체
+			
+			System.out.println(studentMap.get(key).getStudentName());
 			
 		}
 		

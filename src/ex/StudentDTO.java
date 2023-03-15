@@ -51,6 +51,7 @@ public class StudentDTO {
 		this.id = id;
 	}
 
+	@Override
 	public String toString() {
 		String str = studentNumber + "\t" + studentName + "\t" + studentMajor + "\t" + studentMoblie;
 		return str;
